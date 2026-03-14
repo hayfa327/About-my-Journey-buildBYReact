@@ -1,4 +1,4 @@
-export const MyJourney = 
+export default 
 [
   {
     id: 1,

@@ -1,6 +1,5 @@
-import React from "react"
-
-import { MyJourney } from "./data"
+import Header from "./header"
+import  MyJourney  from "./data"
 import JourneyCard from "./journeyCard"
  
 
@@ -8,16 +7,14 @@ export default function App() {
 const journeyElements = MyJourney.map((journey) => {
  return (
     < JourneyCard 
-    key={journey.city + journey.date}
-    img={journey.img}
-    city={journey.city}
-    date={journey.date}
-    description={journey.description}
+    key={journey.id}
+    journey={journey}
     /> 
  )
 })
 return (
 <main>
+  < Header />,
   {journeyElements}
 </main>
 
